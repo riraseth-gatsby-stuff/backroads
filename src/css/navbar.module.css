@@ -4,6 +4,9 @@
   background: var(--mainWhite);
   z-index: 100;
 }
+.navbar + * {
+  margin-top: 62px;
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
