@@ -14,6 +14,8 @@ const About = () => {
         </article>
         <article className={styles.aboutInfo}>
           <h4>explore the difference</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eos
             cumque quo.
           </p>
           <p>
