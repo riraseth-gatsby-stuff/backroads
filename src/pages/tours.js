@@ -1,12 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Header from '../examples/RegularHeader';
 const tours = () => {
-  return (
-    <Layout>
-      <Header></Header>
-    </Layout>
-  );
+  return <Layout>hello from tours page</Layout>;
 };
 
 export default tours;
