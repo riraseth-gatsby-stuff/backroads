@@ -1,4 +1,8 @@
-
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: var(--mainWhite);
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
