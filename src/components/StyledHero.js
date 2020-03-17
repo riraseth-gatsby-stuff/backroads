@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 const StyledHero = ({ img, className, children, home }) => {
-  console.log(home);
   return (
     <BackgroundImage className={className} fluid={img} home={home}>
       {children}
@@ -19,6 +18,7 @@ export default styled(StyledHero)`
   background-position: center;
   background-size: cover;
   opacity: 1 !important;
+  /* opacity if linear gradient is bugged */
   display: flex;
   justify-content: center;
   align-items: center;
