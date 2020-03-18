@@ -6,6 +6,7 @@ import Banner from '../components/Banner';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import StyledHero from '../components/StyledHero';
+import FeaturedTours from '../components/Home/FeaturedTours';
 
 //with export we can skip useStaticQuery
 export const query = graphql`
@@ -36,6 +37,7 @@ export default ({ data }) => {
       </StyledHero>
       <About></About>
       <Services></Services>
+      <FeaturedTours></FeaturedTours>
     </Layout>
   );
 };
