@@ -9,7 +9,6 @@ const TourList = ({ edges }) => {
     // setTours(edges);
     setSortedTours(edges);
   }, [edges]);
-  console.log(sortedTours);
   if (sortedTours) {
     return (
       <section className={styles.tours}>
