@@ -27,6 +27,7 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: `tours/${node.slug}`,
       component: path.resolve(`./src/templates/tour-template.js`),
+      //variable name must be the same in query
       context: {
         slug: node.slug
       }
