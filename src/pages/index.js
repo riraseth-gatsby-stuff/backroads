@@ -8,7 +8,7 @@ import Services from '../components/Home/Services';
 import StyledHero from '../components/StyledHero';
 import FeaturedTours from '../components/Home/FeaturedTours';
 
-//with export we can skip useStaticQuery
+//with export we can skip useStaticQuery, it's a page query, work only in pages
 export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
