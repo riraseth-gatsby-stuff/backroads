@@ -21,6 +21,13 @@ exports.createPages = async ({ actions, graphql }) => {
           }
         }
       }
+      posts: allContentfulPost {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `);
   data.tours.edges.forEach(({ node }) => {
@@ -28,6 +35,15 @@ exports.createPages = async ({ actions, graphql }) => {
       path: `tours/${node.slug}`,
       component: path.resolve(`./src/templates/tour-template.js`),
       //variable name must be the same in query
+      context: {
+        slug: node.slug
+      }
+    });
+  });
+  data.posts.edges.forEach(({ node }) => {
+    createPage({
+      path: `blog/${node.slug}`,
+      component: path.resolve(`./src/templates/blog-template.js`),
       context: {
         slug: node.slug
       }
