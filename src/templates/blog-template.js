@@ -14,14 +14,27 @@ const Blog = ({ data }) => {
     renderNode: {
       'embedded-asset-block': node => {
         return (
-          <div className="rich">
-            <h3>this is awesome image</h3>
+          <div>
             <img
               src={node.data.target.fields.file['en-US'].url}
               alt=""
               width="400"
             />
             <p>Images provided by jane doe</p>
+          </div>
+        );
+      },
+      'embedded-entry-block': node => {
+        const { title, image, text } = node.data.target.fields;
+        return (
+          <div>
+            <h1>this is other post: {title['en-US']}</h1>
+            <img
+              src={image['en-US'].fields.file['en-US'].url}
+              alt=""
+              width="400"
+            />
+            {documentToReactComponents(text['en-US'])}
           </div>
         );
       }
