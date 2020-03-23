@@ -5,6 +5,8 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styles from '../css/blog.module.css';
 import BlogCard from '../components/Blog/BlogCard';
 import StyledTitle from '../components/StyledTitle';
+import SEO from '../components/SEO';
+
 // we're using props because we're passing numPages and currentPage from createPage in gatsby-node.js
 const Blog = props => {
   const { currentPage, numPages } = props.pageContext;
@@ -18,6 +20,7 @@ const Blog = props => {
   const { data } = props;
   return (
     <Layout>
+      <SEO title="Blogs" description="this is blogs description"></SEO>
       <section className={styles.blog}>
         <StyledTitle title="latest" subtitle="posts"></StyledTitle>
         <div className={styles.center}>

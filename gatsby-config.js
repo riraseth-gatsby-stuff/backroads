@@ -28,12 +28,21 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://adoring-villani-67878f.netlify.com',
+        sitemap: 'https://adoring-villani-67878f.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`
   ]
 };
