@@ -15,7 +15,7 @@ const getTours = graphql`
           days
           images {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }
