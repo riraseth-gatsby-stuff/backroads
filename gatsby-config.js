@@ -7,7 +7,10 @@ module.exports = {
     title: 'BackRoads',
     description:
       'Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure',
-    author: '@Łukasz Zabuski'
+    author: '@Łukasz Zabuski',
+    twitterUsername: '@test_bob',
+    image: 'defaultBcg.jpeg',
+    siteUrl: 'https://adoring-villani-67878f.netlify.com'
   },
   plugins: [
     {
@@ -30,6 +33,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-playground`
+    `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`
   ]
 };
