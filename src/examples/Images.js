@@ -17,7 +17,7 @@ const getImages = graphql`
     fluid: file(relativePath: { eq: "blogBcg.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
