@@ -8,8 +8,8 @@ module.exports = {
     description:
       'Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure',
     author: '@Łukasz Zabuski',
-    twitterUsername: '@test_bob',
-    image: 'defaultBcg.jpeg',
+    twitterUsername: '@riraseth',
+    image: '/defaultBcg.jpeg',
     siteUrl: 'https://adoring-villani-67878f.netlify.com'
   },
   plugins: [
